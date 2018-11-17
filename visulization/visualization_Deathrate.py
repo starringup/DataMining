@@ -6,7 +6,7 @@ from collections import Counter
 # Input data files are available in the "../input/" directory.
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
 
-countries_of_the_world = pd.read_csv('C:/Users/Gilbert_Lee/Desktop/DataMining/countries of the world.csv', encoding="windows-1252")
+countries_of_the_world = pd.read_csv('C:/Users/Gilbert_Lee/Desktop/DataMining/Developed Countries.csv', encoding="windows-1252")
 countries_of_the_world['Country'].unique()
 countries_of_the_world.Deathrate.replace(['-'],0.0,inplace = True)
 countries_of_the_world.Deathrate = countries_of_the_world.Deathrate.astype(float)
@@ -27,3 +27,4 @@ plt.xticks(rotation= 45)
 plt.xlabel('Countries')
 plt.ylabel('Deathrate')
 plt.title('Deathrate of Countries')
+plt.show()
